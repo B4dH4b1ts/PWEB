@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança na Web</title>
+    <link rel="stylesheet" href="Atividade3.css">
+</head>
+<body>
+    <header>
+        <h1>Segurança na Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#ataques">Ataques e Proteções</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="#bibliografia">Bibliografia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Um dos temas mais importantes quando estamos pensando na criação de um site, ou até mesmo entrando em um como usuários, é a segurança. As importâncias de um sistema web seguro vai muito além da proteção de dados sensíveis, pois sabemos que a internet não é um lugar seguro. Trazendo a confiança dos usuários, cuidando das reputações das organizações e garantindo uma estabilidade do ambiente digital.</p>
+            <p>Tendo o objetivo de proteger sites de acessos, uso, destruição ou interrupção não autorizados, a segurança requer reforços em todo o site: dentro da própria aplicação web, no servidor, nas políticas de criação e renovação de senhas. Contando com os conceitos de autenticação, autorização, confidencialidade, integridade e disponibilidade.</p>
+        </section>
+
+        <figure>
+            <img src="imagem1.png" title="Etapas de um desenvolvimento seguro" alt="Etapas" >
+            <figcaption><small>Figura 1: Etapas de um Desenvolvimento Seguro</small></figcaption>
+        </figure>
+
+        <section id="ataques">
+            <h2>Ataques mais Comuns e Como se Proteger</h2>
+            <h3>Injeção de Código (XSS)</h3>
+            <p>XSS é um modo de ataque em que falhas dos sites são exploradas para injetar códigos ou scripts maliciosos visando o acesso a bancos de dados. Para evitar, use a parametrização das consultas SQL e a sanitização de entrada.</p>
+
+            <h3>Injeção de SQL (SQLi)</h3>
+            <p>SQLi visa vulnerabilidades nos bancos de dados para obter acessos não autorizados. Para evitar, garanta que os dados dos usuários não alterem a natureza das consultas SQL.</p>
+
+            <h3>Falsificação de Solicitações entre Sites (CSRF)</h3>
+            <p>CSRF é um ataque ao usuário induzindo-o a fazer uma solicitação que usa a sua autorização e autenticação. Use domínios padrão e tokens anti-CSRF para evitar.</p>
+        </section>
+
+        <figure>
+            <img src="Imagem2.jpg" title="Etapas de um desenvolvimento seguro" alt="Etapas" >
+            <figcaption><small>Figura 1: Etapas de um Desenvolvimento Seguro</small></figcaption>
+        </figure>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Com o aumento do uso da internet, vemos também o aumento dos perigos dentro dela. Como programadores, devemos sempre estar atentos, adotando melhores práticas de segurança, entendendo os princípios básicos da segurança da informação e estudando como proteger melhor o ambiente digital para os usuários.</p>
+        </section>
+
+        <section id="bibliografia">
+            <h2>Bibliografia</h2>
+            <ul>
+                <li>FABRICIO GALDINO. <i>Implementando segurança na programação Web</i>. Disponível em: <a href="https://www.devmedia.com.br/implementando-seguranca-na-programacao-web/34375">https://www.devmedia.com.br/implementando-seguranca-na-programacao-web/34375</a>. Acesso em: 15 ago. 2024.</li>
+                <li>MARCELA. <i>Segurança da informação para desenvolvedores: protegendo seu código e seus usuários</i>. Disponível em: <a href="https://awari.com.br/seguranca-da-informacao-para-desenvolvedores-protegendo-seu-codigo-e-seus-usuarios/">https://awari.com.br/seguranca-da-informacao-para-desenvolvedores-protegendo-seu-codigo-e-seus-usuarios/</a>. Acesso em: 15 ago. 2024.</li>
+                <li><i>Segurança Web: 5 práticas para um desenvolvimento seguro</i>. Disponível em: <a href="https://www.devdofuturo.com/seguranca-web/#Fundamentos_da_seguranca_web">https://www.devdofuturo.com/seguranca-web/#Fundamentos_da_seguranca_web</a>. Acesso em: 15 ago. 2024.</li>
+                <li><i>Segurança em aplicação web - Aprendendo desenvolvimento web | MDN</i>. Disponível em: <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/First_steps/Website_security">https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/First_steps/Website_security</a>.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aninha-Segurança na Web. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
