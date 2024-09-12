@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.color-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .color-box {
+        background-color: #ff2f00; 
+    }
+    #color-text::after {
+        content: 'Laranja 420px';
+    }
+}
+
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .color-box {
+        background-color: #24d344; 
+    }
+    #color-text::after {
+        content: 'Verde 768px';
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .color-box {
+        background-color: #3357FF; 
+    }
+    #color-text::after {
+        content: 'Azul 1024px';
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .color-box{
+        background-color: #ff00bf;
+    }
+
+    #color-text::after{
+        content: 'Rosa 1080px';
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .color-box{
+        background-color: #000000;
+    }
+
+    #color-text::after{
+        content: 'Preto 1366px';
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .color-box{
+        background-color: #00f7ff;
+    }
+
+    #color-text::after{
+        content: 'Azul Bb';
+    }
+}
+
+@media (min-width: 1921px) {
+    .color-box {
+        background-color: #8a3a08ef; 
+    }
+    #color-text::after {
+        content: 'Marrom 1920px';
+    }
+}
