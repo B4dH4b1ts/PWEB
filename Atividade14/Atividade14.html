@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade14</title>
+</head>
+<body>
+
+    <div>
+        <h1>Transformar Texto</h1>
+        <input type="text" id="texto" placeholder="Digite seu texto aqui" />
+        <br><br>
+        
+        <input type="radio" id="maiusculo" name="transformacao" onclick="transformarTexto('maiusculo')">
+        <label for="maiusculo">Maiúsculo</label>
+        <br>
+        
+        <input type="radio" id="minusculo" name="transformacao" onclick="transformarTexto('minusculo')">
+        <label for="minusculo">Minúsculo</label>
+        <br><br>
+        
+        <h2 id="resultado"></h2>
+    </div>
+
+    <script>
+        function transformarTexto(tipo) {
+            const input = document.getElementById('texto');
+            const resultado = document.getElementById('resultado');
+
+            if (tipo === 'maiusculo') {
+                resultado.textContent = input.value.toUpperCase();
+            } else if (tipo === 'minusculo') {
+                resultado.textContent = input.value.toLowerCase();
+            }
+        }
+    </script>
+
+</body>
+</html>
